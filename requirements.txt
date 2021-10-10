@@ -1,6 +1,1 @@
 flask
-<<<<<<< HEAD
-flask-sqlalchemy
-=======
-flask-sqlalchemy
->>>>>>> af366e75d04fa0a2379d4cbcc899582202faa90e
