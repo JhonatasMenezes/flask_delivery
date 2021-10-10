@@ -11,4 +11,3 @@ def create_app():
     toolbar.init_app(app)
     site.init_app(app)
     return app
-
