@@ -30,7 +30,8 @@ jobs:
         pip install pytest
         pip install flask
         pip install pytest-flask
-        pip install -r ../requirements.txt
+        pip install flask-debugtoolbar
+        pip install -r '../requirements.txt'
         pip install ..
     - name: Test with pytest
       working-directory: ../.
