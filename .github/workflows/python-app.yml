@@ -32,11 +32,14 @@ jobs:
         pip install pytest-flask
         pip install flask-debugtoolbar
         pip install ..
+    - name: Flask ENV
+      run: |
+        $env:FLASK_APP="delivery/app.py"
     - name: Database migrations
       working-directory: ..
-      run: |
-        FLASK_APP="delivery/app.py" flask create-db
-        FLASK_APP="delivery/app.py" flask db upgrade
+      run: | 
+        flask create-db
+        flask db upgrade
     - name: Test with pytest
       working-directory: ../.
       run: |
