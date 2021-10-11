@@ -38,7 +38,6 @@ jobs:
     - name: Database migrations
       working-directory: ..
       run: | 
-        flask create-db
         flask db upgrade
     - name: Test with pytest
       working-directory: ../.
