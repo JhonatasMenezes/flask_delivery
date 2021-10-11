@@ -32,6 +32,10 @@ jobs:
         pip install pytest-flask
         pip install flask-debugtoolbar
         pip install ..
+    - name: Database migrations
+      run: |
+        flask create-db
+        flask db upgrade
     - name: Test with pytest
       working-directory: ../.
       run: |
