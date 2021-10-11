@@ -33,6 +33,7 @@ jobs:
         pip install flask-debugtoolbar
         pip install ..
     - name: Database migrations
+      working-directory: ..
       run: |
         flask create-db
         flask db upgrade
